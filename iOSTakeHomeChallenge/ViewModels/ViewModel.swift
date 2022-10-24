@@ -14,7 +14,7 @@ class ViewModel {
     
     var isSearching = false
     
-    func getCharacters(tableView: UITableView) {
+    func getCharacters(view: UIViewController, tableView: UITableView) {
         NetworkRequest.shared.request { [weak self] result in
             guard let self = self else { return }
             switch result {
@@ -25,7 +25,7 @@ class ViewModel {
                     tableView.reloadData()
                 }
             case .failure(let error):
-                print("print error for now \(error)")
+                Utilities.errorAlert(title: "Oh no!", body: error, viewController: view)
             }
         }
     }
@@ -47,7 +47,6 @@ class ViewModel {
         searchBar.searchTextField.textColor = UIColor(named: "Gray")
         searchBar.tintColor = UIColor(named: "Gray")
         searchBar.searchTextField.attributedPlaceholder = NSAttributedString.init(string: "Search", attributes: [.foregroundColor:UIColor(named: "Gray")!])
-        searchBar.showsCancelButton = true
         searchBar.sizeToFit()
     }
 }

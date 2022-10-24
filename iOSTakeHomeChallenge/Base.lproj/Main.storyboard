@@ -40,6 +40,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9YC-Fe-cBY">
                                 <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" name="Gray"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCell" rowHeight="126" id="uNh-5v-kN7" customClass="CharacterTableViewCell" customModule="iOSTakeHomeChallenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="414" height="126"/>
@@ -54,8 +55,8 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seasons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-0G-BUK">
-                                                    <rect key="frame" x="333" y="16" width="65" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seasons:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-0G-BUK">
+                                                    <rect key="frame" x="328.5" y="16" width="69.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -104,6 +105,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="4uA-0G-BUK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6oM-EL-mzU" secondAttribute="trailing" constant="8" symbolic="YES" id="1Yx-kp-pze"/>
                                                 <constraint firstItem="pXp-40-OSd" firstAttribute="leading" secondItem="AE2-ee-X9I" secondAttribute="leading" constant="16" id="1yJ-85-Mmd"/>
                                                 <constraint firstItem="tND-Yo-f52" firstAttribute="top" secondItem="pXp-40-OSd" secondAttribute="bottom" constant="8" id="2tm-FW-hcu"/>
                                                 <constraint firstItem="kRa-gf-JDh" firstAttribute="top" secondItem="tND-Yo-f52" secondAttribute="bottom" constant="8" id="2uS-9a-lYO"/>
@@ -122,6 +124,7 @@
                                                 <constraint firstItem="pXp-40-OSd" firstAttribute="top" secondItem="6oM-EL-mzU" secondAttribute="bottom" constant="8" id="hmC-z3-0Va"/>
                                                 <constraint firstItem="pVz-oz-dX5" firstAttribute="centerY" secondItem="kRa-gf-JDh" secondAttribute="centerY" id="o1g-gg-hCd"/>
                                                 <constraint firstAttribute="bottom" secondItem="kRa-gf-JDh" secondAttribute="bottom" constant="16" id="ru3-3y-bfu"/>
+                                                <constraint firstItem="PrP-ML-Y8g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dNt-Pp-mrk" secondAttribute="trailing" constant="8" symbolic="YES" id="sc9-81-N9E"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,7 +171,7 @@
                         <color key="badgeColor" name="Gainsboro"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mjy-d0-ZYO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="mjy-d0-ZYO">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -190,6 +193,9 @@
         </namedColor>
         <namedColor name="Gainsboro">
             <color red="0.80000000000000004" green="0.92156862745098034" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.48627450980392156" green="0.49411764705882355" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

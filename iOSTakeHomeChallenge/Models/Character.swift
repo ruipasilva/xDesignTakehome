@@ -7,7 +7,8 @@ struct Character: Codable {
     let gender: String
     let culture: String
     let born: String
-    let died: String
+    var died: String
+    var titles: [String]
     let aliases: [String]
     let tvSeries: [String]
     let playedBy: [String]

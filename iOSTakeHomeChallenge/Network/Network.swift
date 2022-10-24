@@ -12,22 +12,24 @@ class NetworkRequest {
     
     static let shared = NetworkRequest()
     
+    let getHTTPMethod = HTTPMethod.get
+    
     func request(additionalHeaderValues: [String: String] = [String: String](),
                  completion: @escaping(Result<[Character], NetworkingError>) -> Void) {
         
-        guard let url = URL(string: "https://yj8ke8qonl.execute-api.eu-west-1.amazonaws.com/characters") else {
+        let urlString = UtilitiesStrings.endPoint
+        
+        guard let url = URL(string: urlString) else {
             completion(.failure(.unableToComplete))
             return
         }
         
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        request.httpMethod = getHTTPMethod.rawValue
         
         let config = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = 15
-        config.httpAdditionalHeaders = [
-            "Authorization": "Bearer 754t!si@glcE2qmOFEcN"
-        ]
+        config.httpAdditionalHeaders = UtilitiesStrings.aditionalHeader
         
         let task = URLSession(configuration: config)
             .dataTask(with: request, completionHandler: { data, response, error in
@@ -54,3 +56,4 @@ class NetworkRequest {
     }
     
 }
+

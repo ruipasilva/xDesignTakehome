@@ -13,9 +13,9 @@ class CharacterTableViewCell: UITableViewCell {
     func setupWith(character: Character) {
         selectionStyle = .none
         nameLabel.text = character.name
-        cultureLabel.text = character.culture
+        cultureLabel.text = character.culture == "" ? "Unknown" : character.culture
         bornLabel.text = character.born
-        diedLabel.text = character.died
+        diedLabel.text = character.died == "" ? "Still Alive" : character.died
 
         var seasons = ""
 
