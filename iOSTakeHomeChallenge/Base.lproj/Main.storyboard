@@ -166,7 +166,7 @@
         <!--Characters-->
         <scene sceneID="09e-kS-TD4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8YP-nk-DVq" sceneMemberID="viewController">
+                <navigationController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="8YP-nk-DVq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Characters" image="tabbarCharacters" selectedImage="tabbarCharactersActive" id="7K3-9A-uXX">
                         <color key="badgeColor" name="Gainsboro"/>
                     </tabBarItem>

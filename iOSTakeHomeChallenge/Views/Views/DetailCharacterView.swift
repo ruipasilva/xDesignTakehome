@@ -27,9 +27,9 @@ struct DetailCharacterView: View {
                                 .foregroundColor(Color("Gray"))
                                 .padding(.bottom, 8)
                             
-                            DetailComponents(title: "Titles:", items: character.titles)
-                            DetailComponents(title: "Aliases:", items: character.aliases)
-                            DetailComponents(title: "Played By:", items: character.playedBy)
+                            DetailComponents(title: "Titles:", items: character.titles, SFSymbol: "crown")
+                            DetailComponents(title: "Aliases:", items: character.aliases, SFSymbol: "shield")
+                            DetailComponents(title: "Played By:", items: character.playedBy, SFSymbol: "person")
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal, 16)
