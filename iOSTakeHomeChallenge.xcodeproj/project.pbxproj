@@ -15,6 +15,9 @@
 		117E69AF25F7A3B600E313E3 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117E69AE25F7A3B600E313E3 /* CharactersViewController.swift */; };
 		B0BE6229282028D300908229 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BE6228282028D300908229 /* Character.swift */; };
 		B0BE622C2820293F00908229 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BE622B2820293F00908229 /* CharacterTableViewCell.swift */; };
+		B339103A2906F2F0002D2A1D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33910392906F2F0002D2A1D /* ViewModel.swift */; };
+		B339103D2906F3F5002D2A1D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B339103C2906F3F5002D2A1D /* Network.swift */; };
+		B33910402906F4B8002D2A1D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B339103F2906F4B8002D2A1D /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		117E69AE25F7A3B600E313E3 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		B0BE6228282028D300908229 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B0BE622B2820293F00908229 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		B33910392906F2F0002D2A1D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B339103C2906F3F5002D2A1D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B339103F2906F4B8002D2A1D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,11 @@
 		117E699225F7A21E00E313E3 /* iOSTakeHomeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B33910412906F4BD002D2A1D /* Utilities */,
+				B339103E2906F401002D2A1D /* Network */,
 				B0BE6227282028C100908229 /* Models */,
-				B0BE6225282028A500908229 /* Modules */,
+				B339103B2906F2F7002D2A1D /* ViewModels */,
+				B0BE6225282028A500908229 /* ViewControllers */,
 				117E699325F7A21E00E313E3 /* AppDelegate.swift */,
 				117E699525F7A21E00E313E3 /* SceneDelegate.swift */,
 				117E699925F7A21E00E313E3 /* Main.storyboard */,
@@ -72,12 +81,12 @@
 			path = iOSTakeHomeChallenge;
 			sourceTree = "<group>";
 		};
-		B0BE6225282028A500908229 /* Modules */ = {
+		B0BE6225282028A500908229 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				B0BE6226282028AF00908229 /* Characters */,
 			);
-			path = Modules;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B0BE6226282028AF00908229 /* Characters */ = {
@@ -95,6 +104,30 @@
 				B0BE6228282028D300908229 /* Character.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B339103B2906F2F7002D2A1D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B33910392906F2F0002D2A1D /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B339103E2906F401002D2A1D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B339103C2906F3F5002D2A1D /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B33910412906F4BD002D2A1D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B339103F2906F4B8002D2A1D /* Utilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +204,9 @@
 				117E699425F7A21E00E313E3 /* AppDelegate.swift in Sources */,
 				B0BE622C2820293F00908229 /* CharacterTableViewCell.swift in Sources */,
 				117E699625F7A21E00E313E3 /* SceneDelegate.swift in Sources */,
+				B339103A2906F2F0002D2A1D /* ViewModel.swift in Sources */,
+				B339103D2906F3F5002D2A1D /* Network.swift in Sources */,
+				B33910402906F4B8002D2A1D /* Utilities.swift in Sources */,
 				B0BE6229282028D300908229 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

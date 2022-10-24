@@ -3,6 +3,7 @@
 import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
+    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var cultureLabel: UILabel!
     @IBOutlet var bornLabel: UILabel!
@@ -19,6 +20,7 @@ class CharacterTableViewCell: UITableViewCell {
         var seasons = ""
 
         for season in character.tvSeries {
+            
             if season == "Season 1" {
                 seasons.append("I ")
             } else if season == "Season 2" {
@@ -40,4 +42,6 @@ class CharacterTableViewCell: UITableViewCell {
 
         seasonLabel.text = seasons
     }
+    
+    
 }
