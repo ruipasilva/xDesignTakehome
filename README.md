@@ -1,7 +1,5 @@
 # xDesignTakehome
 
-# Overview
-
 This is my entry to the xDesign Take Home Challange.
 
 I've fixed all the documented and most of all undocumented issues. 
@@ -36,4 +34,6 @@ Unfortunately there are 2 things I wish I had more time to research and apply.
 
 2. An algorithm that would make the seasons create a sequence just like the designs and remove the "," at the end of the last season.
     - I've left my starting point in the **CharacterTableViewCell**. It's just func that returns a string. It's not complete but it would be my starting point
+    
+3. Write a more generic Network Call. 
 
